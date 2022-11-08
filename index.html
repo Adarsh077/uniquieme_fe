@@ -1,210 +1,539 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="/unqiueme.js"></script>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css" />
     <title>Unique me</title>
-</head>
-<body class="antialiased m-0 p-0 bg-[#7FD8E0] font-another ">
-    <section class=" h-screen">
-        <div class="flex flex-col h-screen md:flex-row-reverse content-center justify-evenly m md:items-center md:mx-20  ">
+  </head>
+  <body class="antialiased m-0 p-0 bg-[#7FD8E0] font-another">
+    <section class="h-screen">
+      <div
+        class="flex flex-col h-screen md:flex-row-reverse content-center justify-evenly m md:items-center md:mx-20"
+      >
         <!-- Animated ship -->
-        
-        <div class="flex flex-col items-center md:items-end">
-                <!-- lg:h-[32rem] lg:w-[32rem] lg:mt-56  -->
-        <img class="h-96 w-96 lg:scale-110 z-0 animate-[wiggle_1s_ease-in-out_infinite]" src="./img/ship.png" alt="Ship">
-        <!-- inifnite sea -->
-        <img class="h-max w-max -m-[80px] z-10" src="./img/Sea.png" alt="Sea">
 
-        </div>            
+        <div class="flex flex-col items-center md:items-end">
+          <!-- lg:h-[32rem] lg:w-[32rem] lg:mt-56  -->
+          <img
+            class="h-96 w-96 lg:scale-110 z-0 animate-[wiggle_1s_ease-in-out_infinite]"
+            src="./img/ship.png"
+            alt="Ship"
+          />
+          <!-- inifnite sea -->
+          <img
+            class="h-max w-max -m-[80px] z-10"
+            src="./img/Sea.png"
+            alt="Sea"
+          />
+        </div>
         <!-- Hero Text -->
         <!-- Type writter animation -->
         <div class="text-white">
-        <h1 class="text-6xl text-center md:text-left mt-60 md:m-0 font-another"> <b>Start with</b> </h1>
-        <h1 class="text-5xl mt-1 typed-out"> Being <span>"U"</span>nique </h1>
+          <h1
+            class="text-6xl text-center md:text-left mt-60 md:m-0 font-another"
+          >
+            <b>Start with</b>
+          </h1>
+          <h1 class="text-5xl mt-1 typed-out">Being <span>"U"</span>nique</h1>
         </div>
-        </div>
+      </div>
     </section>
-        <!-- Search Bar -->
-        <div class="flex justify-center text-gray-600 ">
-            <!-- <input type="text" class="m-auto border-[1px] border-black w-3/4 md:w-2/4 rounded-2xl h-10 px-4 text-black text-right bg-white focus:border-blue-600 font-Karma_medium" placeholder="Search"> -->
-            <input type="search" name="search" placeholder="Search" class="shadow-l m-auto w-3/4 md:w-2/4 bg-white h-10 px-5 pr-4 rounded-full text-sm focus:outline-none">
-
-        </div>
+    <!-- Search Bar -->
+    <form id="search" class="flex justify-center text-gray-600">
+      <!-- <input type="text" class="m-auto border-[1px] border-black w-3/4 md:w-2/4 rounded-2xl h-10 px-4 text-black text-right bg-white focus:border-blue-600 font-Karma_medium" placeholder="Search"> -->
+      <input
+        id="username"
+        type="search"
+        name="search"
+        placeholder="Search"
+        class="shadow-l m-auto w-3/4 md:w-2/4 bg-white h-10 px-5 pr-4 rounded-full text-sm focus:outline-none"
+      />
+    </form>
     <!-- Social -->
     <section>
-        <h1 class="text-center text-white m-14 text-4xl font-bold">Social Media</h1>
-        <div class="m-auto  md:max-w-3xl lg:max-w-6xl">
-            
-            <div class="flex flex-row flex-wrap justify-around m-8">
-                <!-- Instagram -->   
-                <div class=" flex flex-col justify-between hover:translate-y-1">
-                    <a href="https://www.instagram.com/"><div class=" w-44 h-44 flex flex-col justify-around "> 
-                    <img id="Instagram" src="/img/Instagram.png" class="max-w-[75%] m-auto"></a>
-                    <img id="Refresh" src="/img/Refresh.png" class="hidden h-fit w-fit m-auto">
-                    <img id="Check" src="/img/Tick.png" class=" h-fit w-fit m-auto">
-                    <img id="Cancel" src="/img/Refresh.png" class="hidden h-fit w-fit m-auto">
-                    </div>
-                </div>
-                <!-- Facebook -->
-                <div class=" w-44 h-44 flex flex-col justify-around hover:translate-y-1">
-                    <img id="Instagram" src="/img/Facebook.png" class="max-w-[75%] m-auto">
-                    <img id="Refresh" src="/img/Refresh.png" class=" hidden h-fit w-fit m-auto">
-                    <img id="Check" src="/img/Tick.png" class="hidden h-fit w-fit m-auto">
-                    <img id="Cancel" src="/img/wrong.png" class=" h-fit w-fit m-auto">
-                </div>
-            </div>
-            <div class="flex flex-row flex-wrap justify-around mt-8 m-8">
-                <!-- Youtube -->
-                <div class=" w-44 h-44 flex flex-col justify-around hover:translate-y-1">
-                    <img id="Instagram" src="/img/Youtube.png" class="max-w-[75%] m-auto">
-                    <img id="Refresh" src="/img/Refresh.png" class=" h-fit w-fit m-auto">
-                    <img id="Check" src="/img/Tick.png" class="hidden h-fit w-fit m-auto">
-                    <img id="Cancel" src="/img/wrong.png" class="hidden h-fit w-fit m-auto">
-                </div>
-                <!-- Twitter -->
-                <div class=" w-44 h-44 flex flex-col justify-around hover:translate-y-1">
-                    <img id="Instagram" src="/img/Twitter.png" class="max-w-[75%] m-auto">
-                    <img id="Refresh" src="/img/Refresh.png" class="h-fit w-fit m-auto">
-                    <img id="Check" src="/img/Tick.png" class="hidden h-fit w-fit m-auto">
-                    <img id="Cancel" src="/img/wrong.png" class="hidden h-fit w-fit m-auto">
-                </div>
-            </div>
-            <div class="hidden" id="socialextra1" style="display: none;">
-            <div class="flex flex-row flex-wrap justify-around m-8 "  >
-                <!-- LinkedIn -->   
-                <div class=" flex flex-col justify-between hover:translate-y-1" >
-                    <div class=" w-44 h-44 flex flex-col justify-around ">
-                    <img id="Instagram" src="/img/LinkenIn.png" class="max-w-[75%] m-auto">
-                    <img id="Refresh" src="/img/Refresh.png"  class=" h-fit w-fit m-auto">
-                    <img id="Check" src="/img/Tick.png" class="hidden h-fit w-fit m-auto">
-                    <img id="Cancel" src="/img/wrong.png" class="hidden h-fit w-fit m-auto">
-                    </div>
-                </div>
-                <!-- Twitch -->
-                <div class=" w-44 h-44 flex flex-col justify-around hover:translate-y-1">
-                    <img id="Instagram" src="/img/Twitch.png" class="max-w-[75%] m-auto">
-                    <img id="Refresh" src="/img/Refresh.png" class="h-fit w-fit m-auto">
-                    <img id="Check" src="/img/Tick.png" class="hidden h-fit w-fit m-auto">
-                    <img id="Cancel" src="/img/wrong.png" class="hidden h-fit w-fit m-auto">
-                </div>
-            </div>
-            </div>
-            <div class="hidden" id="socialextra2" style="display: none;">
-            <div class="flex flex-row flex-wrap justify-around mt-8 m-8" id="socialextra2">
-                <!-- LinkedIn -->
-                <div class=" w-44 h-44 flex flex-col justify-around hover:translate-y-1">
-                    <img id="Instagram" src="/img/Reddit.png" class="max-w-[75%] m-auto">
-                    <img id="Refresh" src="/img/Refresh.png" class=" h-fit w-fit m-auto">
-                    <img id="Check" src="/img/Tick.png" class="hidden h-fit w-fit m-auto">
-                    <img id="Cancel" src="/img/wrong.png" class="hidden h-fit w-fit m-auto">
-                </div>
-                <!-- LinkedIn -->
-                <div class=" w-44 h-44 flex flex-col justify-around hover:translate-y-1">
-                    <img id="Instagram" src="/img/Snapchat.png" class="max-w-[75%] m-auto">
-                    <img id="Refresh" src="/img/Refresh.png" class="h-fit w-fit m-auto">
-                    <img id="Check" src="/img/Tick.png" class="hidden h-fit w-fit m-auto">
-                    <img id="Cancel" src="/img/wrong.png" class="hidden h-fit w-fit m-auto">
-                </div>
-            </div>
+      <h1 class="text-center text-white m-14 text-4xl font-bold">
+        Social Media
+      </h1>
+      <div class="m-auto md:max-w-3xl lg:max-w-6xl">
+        <div class="flex flex-row flex-wrap justify-around m-8">
+          <!-- Instagram -->
+          <div
+            id="instagram-root"
+            class="flex flex-col justify-between hover:translate-y-1"
+          >
+            <a href="https://www.instagram.com/" target="_blank"
+              ><div class="w-44 h-44 flex flex-col justify-around">
+                <img
+                  id="Instagram"
+                  src="/img/Instagram.png"
+                  class="max-w-[75%] m-auto"
+                />
+                <img
+                  id="Refresh"
+                  src="/img/Refresh.png"
+                  class="hidden h-fit w-fit m-auto"
+                />
+                <img
+                  id="Check"
+                  src="/img/Tick.png"
+                  class="hidden h-fit w-fit m-auto"
+                />
+                <img
+                  id="Cancel"
+                  src="/img/wrong.png"
+                  class="hidden h-fit w-fit m-auto"
+                /></div
+            ></a>
+          </div>
+          <!-- Facebook -->
+          <div
+            id="facebook-root"
+            class="w-44 h-44 flex flex-col justify-around hover:translate-y-1"
+          >
+            <a href="#" target="_blank" class="space-y-1">
+              <img
+                id="Instagram"
+                src="/img/Facebook.png"
+                class="max-w-[75%] m-auto"
+              />
+              <img
+                id="Refresh"
+                src="/img/Refresh.png"
+                class="hidden h-fit w-fit m-auto"
+              />
+              <img
+                id="Check"
+                src="/img/Tick.png"
+                class="hidden h-fit w-fit m-auto"
+              />
+              <img
+                id="Cancel"
+                src="/img/wrong.png"
+                class="h-fit w-fit m-auto"
+              />
+            </a>
+          </div>
         </div>
-            <div class="flex justify-center hover:translate-y-1 ">
-            <!-- Show more  -->
-            <button class="bg-yellow-50 hover:bg-yellow-100 text-black font-bold py-2 px-4 rounded-full m-10 active:translate-y-2" onclick="showsocial()" id="socialbutton">
+        <div class="flex flex-row flex-wrap justify-around mt-8 m-8">
+          <!-- Youtube -->
+          <div
+            id="youtube-root"
+            class="w-44 h-44 flex flex-col justify-around hover:translate-y-1"
+          >
+            <a target="_blank" href="#">
+              <img
+                id="Instagram"
+                src="/img/Youtube.png"
+                class="max-w-[75%] m-auto"
+              />
+              <img
+                id="Refresh"
+                src="/img/Refresh.png"
+                class="h-fit w-fit m-auto"
+              />
+              <img
+                id="Check"
+                src="/img/Tick.png"
+                class="hidden h-fit w-fit m-auto"
+              />
+              <img
+                id="Cancel"
+                src="/img/wrong.png"
+                class="hidden h-fit w-fit m-auto"
+              />
+            </a>
+          </div>
+          <!-- Twitter -->
+          <div
+            id="twitter-root"
+            class="w-44 h-44 flex flex-col justify-around hover:translate-y-1"
+          >
+            <a target="_blank" href="#">
+              <img
+                id="Instagram"
+                src="/img/Twitter.png"
+                class="max-w-[75%] m-auto"
+              />
+              <img
+                id="Refresh"
+                src="/img/Refresh.png"
+                class="h-fit w-fit m-auto"
+              />
+              <img
+                id="Check"
+                src="/img/Tick.png"
+                class="hidden h-fit w-fit m-auto"
+              />
+              <img
+                id="Cancel"
+                src="/img/wrong.png"
+                class="hidden h-fit w-fit m-auto"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="hidden" id="socialextra1" style="display: none">
+          <div class="flex flex-row flex-wrap justify-around m-8">
+            <!-- LinkedIn -->
+            <div class="flex flex-col justify-between hover:translate-y-1">
+              <div
+                id="linkedin-root"
+                class="w-44 h-44 flex flex-col justify-around"
+              >
+                <a href="#" target="_blank">
+                  <img
+                    id="Instagram"
+                    src="/img/LinkenIn.png"
+                    class="max-w-[75%] m-auto"
+                  />
+                  <img
+                    id="Refresh"
+                    src="/img/Refresh.png"
+                    class="h-fit w-fit m-auto"
+                  />
+                  <img
+                    id="Check"
+                    src="/img/Tick.png"
+                    class="hidden h-fit w-fit m-auto"
+                  />
+                  <img
+                    id="Cancel"
+                    src="/img/wrong.png"
+                    class="hidden h-fit w-fit m-auto"
+                  />
+                </a>
+              </div>
+            </div>
+            <!-- Twitch -->
+            <div
+              id="twitch-root"
+              class="w-44 h-44 flex flex-col justify-around hover:translate-y-1"
+            >
+              <a target="_blank" href="#">
+                <img
+                  id="Instagram"
+                  src="/img/Twitch.png"
+                  class="max-w-[75%] m-auto"
+                />
+                <img
+                  id="Refresh"
+                  src="/img/Refresh.png"
+                  class="h-fit w-fit m-auto"
+                />
+                <img
+                  id="Check"
+                  src="/img/Tick.png"
+                  class="hidden h-fit w-fit m-auto"
+                />
+                <img
+                  id="Cancel"
+                  src="/img/wrong.png"
+                  class="hidden h-fit w-fit m-auto"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="hidden" id="socialextra2" style="display: none">
+          <div
+            class="flex flex-row flex-wrap justify-around mt-8 m-8"
+            id="socialextra2"
+          >
+            <!-- LinkedIn -->
+            <div
+              id="reddit-root"
+              class="w-44 h-44 flex flex-col justify-around hover:translate-y-1"
+            >
+              <a target="_blank" href="#">
+                <img
+                  id="Instagram"
+                  src="/img/Reddit.png"
+                  class="max-w-[75%] m-auto"
+                />
+                <img
+                  id="Refresh"
+                  src="/img/Refresh.png"
+                  class="h-fit w-fit m-auto"
+                />
+                <img
+                  id="Check"
+                  src="/img/Tick.png"
+                  class="hidden h-fit w-fit m-auto"
+                />
+                <img
+                  id="Cancel"
+                  src="/img/wrong.png"
+                  class="hidden h-fit w-fit m-auto"
+                />
+              </a>
+            </div>
+            <!-- LinkedIn -->
+            <div
+              id="snapchat-root"
+              class="w-44 h-44 flex flex-col justify-around hover:translate-y-1"
+            >
+              <a target="_blank" href="#">
+                <img
+                  id="Instagram"
+                  src="/img/Snapchat.png"
+                  class="max-w-[75%] m-auto"
+                />
+                <img
+                  id="Refresh"
+                  src="/img/Refresh.png"
+                  class="h-fit w-fit m-auto"
+                />
+                <img
+                  id="Check"
+                  src="/img/Tick.png"
+                  class="hidden h-fit w-fit m-auto"
+                />
+                <img
+                  id="Cancel"
+                  src="/img/wrong.png"
+                  class="hidden h-fit w-fit m-auto"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center hover:translate-y-1">
+          <!-- Show more  -->
+          <button
+            class="bg-yellow-50 hover:bg-yellow-100 text-black font-bold py-2 px-4 rounded-full m-10 active:translate-y-2"
+            onclick="showsocial()"
+            id="socialbutton"
+          >
             Show more
-            </button>
-            </div>
+          </button>
         </div>
-    </section>  
+      </div>
+    </section>
     <!-- Domain -->
     <section>
-        <h1 class="text-center text-white m-14 text-4xl font-bold mt-10">Domain</h1>
-        <div class="m-auto  md:max-w-3xl lg:max-w-6xl">
-            
-            <div class="flex flex-row flex-wrap justify-around m-8">
-                <!-- .com -->   
-                <div class=" flex flex-col justify-between hover:translate-y-1">
-                    <div class=" w-44 h-44 flex flex-col justify-around "> 
-                    <img id="Instagram" src="/img/com.png" class="max-w-[75%] m-auto">
-                    <img id="Refresh" src="/img/Refresh.png" class="hidden h-fit w-fit m-auto">
-                    <img id="Check" src="/img/Tick.png" class=" h-fit w-fit m-auto">
-                    <img id="Cancel" src="/img/Refresh.png" class="hidden h-fit w-fit m-auto">
-                    </div>
-                </div>
-                <!-- LinkedIn -->
-                <div class=" w-44 h-44 flex flex-col justify-around hover:translate-y-1">
-                    <img id="Instagram" src="/img/org.png" class="max-w-[75%] m-auto">
-                    <img id="Refresh" src="/img/Refresh.png" class=" hidden h-fit w-fit m-auto">
-                    <img id="Check" src="/img/Tick.png" class="hidden h-fit w-fit m-auto">
-                    <img id="Cancel" src="/img/wrong.png" class=" h-fit w-fit m-auto">
-                </div>
+      <h1 class="text-center text-white m-14 text-4xl font-bold mt-10">
+        Domain
+      </h1>
+      <div class="m-auto md:max-w-3xl lg:max-w-6xl">
+        <div class="flex flex-row flex-wrap justify-around m-8">
+          <!-- .com -->
+          <div class="flex flex-col justify-between hover:translate-y-1">
+            <div class="w-44 h-44 flex flex-col justify-around">
+              <img
+                id="Instagram"
+                src="/img/com.png"
+                class="max-w-[75%] m-auto"
+              />
+              <img
+                id="Refresh"
+                src="/img/Refresh.png"
+                class="hidden h-fit w-fit m-auto"
+              />
+              <img id="Check" src="/img/Tick.png" class="h-fit w-fit m-auto" />
+              <img
+                id="Cancel"
+                src="/img/Refresh.png"
+                class="hidden h-fit w-fit m-auto"
+              />
             </div>
-            <div class="flex flex-row flex-wrap justify-around mt-8 m-8">
-                <!-- LinkedIn -->
-                <div class=" w-44 h-44 flex flex-col justify-around hover:translate-y-1">
-                    <img id="Instagram" src="/img/net.png" class="max-w-[75%] m-auto">
-                    <img id="Refresh" src="/img/Refresh.png" class=" h-fit w-fit m-auto">
-                    <img id="Check" src="/img/Tick.png" class="hidden h-fit w-fit m-auto">
-                    <img id="Cancel" src="/img/wrong.png" class="hidden h-fit w-fit m-auto">
-                </div>
-                <!-- LinkedIn -->
-                <div class=" w-44 h-44 flex flex-col justify-around hover:translate-y-1">
-                    <img id="Instagram" src="/img/co.png" class="max-w-[75%] m-auto">
-                    <img id="Refresh" src="/img/Refresh.png" class="h-fit w-fit m-auto">
-                    <img id="Check" src="/img/Tick.png" class="hidden h-fit w-fit m-auto">
-                    <img id="Cancel" src="/img/wrong.png" class="hidden h-fit w-fit m-auto">
-                </div>
-            </div>
-            <div class="hidden" id="socialextra3" style="display: none;">
-            <div class="flex flex-row flex-wrap justify-around m-8 "  >
-                <!-- LinkedIn -->   
-                <div class=" flex flex-col justify-between hover:translate-y-1" >
-                    <div class=" w-44 h-44 flex flex-col justify-around ">
-                    <img id="Instagram" src="/img/in.png" class="max-w-[75%] m-auto">
-                    <img id="Refresh" src="/img/Refresh.png"  class=" h-fit w-fit m-auto">
-                    <img id="Check" src="/img/Tick.png" class="hidden h-fit w-fit m-auto">
-                    <img id="Cancel" src="/img/wrong.png" class="hidden h-fit w-fit m-auto">
-                    </div>
-                </div>
-                <!-- LinkedIn -->
-                <div class=" w-44 h-44 flex flex-col justify-around hover:translate-y-1">
-                    <img id="Instagram" src="/img/info.png" class="max-w-[75%] m-auto">
-                    <img id="Refresh" src="/img/Refresh.png" class="h-fit w-fit m-auto">
-                    <img id="Check" src="/img/Tick.png" class="hidden h-fit w-fit m-auto">
-                    <img id="Cancel" src="/img/wrong.png" class="hidden h-fit w-fit m-auto">
-                </div>
-            </div>
-            </div>
-            <div class="hidden" id="socialextra4" style="display: none;">
-            <div class="flex flex-row flex-wrap justify-around mt-8 m-8" id="socialextra2">
-                <!-- LinkedIn -->
-                <div class=" w-44 h-44 flex flex-col justify-around hover:translate-y-1">
-                    <img id="Instagram" src="/img/bike.png" class="max-w-[75%] m-auto">
-                    <img id="Refresh" src="/img/Refresh.png" class=" h-fit w-fit m-auto">
-                    <img id="Check" src="/img/Tick.png" class="hidden h-fit w-fit m-auto">
-                    <img id="Cancel" src="/img/wrong.png" class="hidden h-fit w-fit m-auto">
-                </div>
-                <!-- LinkedIn -->
-                <div class=" w-44 h-44 flex flex-col justify-around hover:translate-y-1">
-                    <img id="Instagram" src="/img/club.png" class="max-w-[75%] m-auto">
-                    <img id="Refresh" src="/img/Refresh.png" class="h-fit w-fit m-auto">
-                    <img id="Check" src="/img/Tick.png" class="hidden h-fit w-fit m-auto">
-                    <img id="Cancel" src="/img/wrong.png" class="hidden h-fit w-fit m-auto">
-                </div>
-            </div>
+          </div>
+          <!-- LinkedIn -->
+          <div
+            class="w-44 h-44 flex flex-col justify-around hover:translate-y-1"
+          >
+            <img id="Instagram" src="/img/org.png" class="max-w-[75%] m-auto" />
+            <img
+              id="Refresh"
+              src="/img/Refresh.png"
+              class="hidden h-fit w-fit m-auto"
+            />
+            <img
+              id="Check"
+              src="/img/Tick.png"
+              class="hidden h-fit w-fit m-auto"
+            />
+            <img id="Cancel" src="/img/wrong.png" class="h-fit w-fit m-auto" />
+          </div>
         </div>
-            <div class="flex justify-center hover:translate-y-1 ">
-            <!-- Show more  -->
-            <button class="bg-yellow-50 hover:bg-yellow-100 text-black font-bold py-2 px-4 rounded-full m-10 active:translate-y-2" onclick="showsdomain()" id="domainbutton">
+        <div class="flex flex-row flex-wrap justify-around mt-8 m-8">
+          <!-- LinkedIn -->
+          <div
+            class="w-44 h-44 flex flex-col justify-around hover:translate-y-1"
+          >
+            <img id="Instagram" src="/img/net.png" class="max-w-[75%] m-auto" />
+            <img
+              id="Refresh"
+              src="/img/Refresh.png"
+              class="h-fit w-fit m-auto"
+            />
+            <img
+              id="Check"
+              src="/img/Tick.png"
+              class="hidden h-fit w-fit m-auto"
+            />
+            <img
+              id="Cancel"
+              src="/img/wrong.png"
+              class="hidden h-fit w-fit m-auto"
+            />
+          </div>
+          <!-- LinkedIn -->
+          <div
+            class="w-44 h-44 flex flex-col justify-around hover:translate-y-1"
+          >
+            <img id="Instagram" src="/img/co.png" class="max-w-[75%] m-auto" />
+            <img
+              id="Refresh"
+              src="/img/Refresh.png"
+              class="h-fit w-fit m-auto"
+            />
+            <img
+              id="Check"
+              src="/img/Tick.png"
+              class="hidden h-fit w-fit m-auto"
+            />
+            <img
+              id="Cancel"
+              src="/img/wrong.png"
+              class="hidden h-fit w-fit m-auto"
+            />
+          </div>
+        </div>
+        <div class="hidden" id="socialextra3" style="display: none">
+          <div class="flex flex-row flex-wrap justify-around m-8">
+            <!-- LinkedIn -->
+            <div class="flex flex-col justify-between hover:translate-y-1">
+              <div class="w-44 h-44 flex flex-col justify-around">
+                <img
+                  id="Instagram"
+                  src="/img/in.png"
+                  class="max-w-[75%] m-auto"
+                />
+                <img
+                  id="Refresh"
+                  src="/img/Refresh.png"
+                  class="h-fit w-fit m-auto"
+                />
+                <img
+                  id="Check"
+                  src="/img/Tick.png"
+                  class="hidden h-fit w-fit m-auto"
+                />
+                <img
+                  id="Cancel"
+                  src="/img/wrong.png"
+                  class="hidden h-fit w-fit m-auto"
+                />
+              </div>
+            </div>
+            <!-- LinkedIn -->
+            <div
+              class="w-44 h-44 flex flex-col justify-around hover:translate-y-1"
+            >
+              <img
+                id="Instagram"
+                src="/img/info.png"
+                class="max-w-[75%] m-auto"
+              />
+              <img
+                id="Refresh"
+                src="/img/Refresh.png"
+                class="h-fit w-fit m-auto"
+              />
+              <img
+                id="Check"
+                src="/img/Tick.png"
+                class="hidden h-fit w-fit m-auto"
+              />
+              <img
+                id="Cancel"
+                src="/img/wrong.png"
+                class="hidden h-fit w-fit m-auto"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="hidden" id="socialextra4" style="display: none">
+          <div
+            class="flex flex-row flex-wrap justify-around mt-8 m-8"
+            id="socialextra2"
+          >
+            <!-- LinkedIn -->
+            <div
+              class="w-44 h-44 flex flex-col justify-around hover:translate-y-1"
+            >
+              <img
+                id="Instagram"
+                src="/img/bike.png"
+                class="max-w-[75%] m-auto"
+              />
+              <img
+                id="Refresh"
+                src="/img/Refresh.png"
+                class="h-fit w-fit m-auto"
+              />
+              <img
+                id="Check"
+                src="/img/Tick.png"
+                class="hidden h-fit w-fit m-auto"
+              />
+              <img
+                id="Cancel"
+                src="/img/wrong.png"
+                class="hidden h-fit w-fit m-auto"
+              />
+            </div>
+            <!-- LinkedIn -->
+            <div
+              class="w-44 h-44 flex flex-col justify-around hover:translate-y-1"
+            >
+              <img
+                id="Instagram"
+                src="/img/club.png"
+                class="max-w-[75%] m-auto"
+              />
+              <img
+                id="Refresh"
+                src="/img/Refresh.png"
+                class="h-fit w-fit m-auto"
+              />
+              <img
+                id="Check"
+                src="/img/Tick.png"
+                class="hidden h-fit w-fit m-auto"
+              />
+              <img
+                id="Cancel"
+                src="/img/wrong.png"
+                class="hidden h-fit w-fit m-auto"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center hover:translate-y-1">
+          <!-- Show more  -->
+          <button
+            class="bg-yellow-50 hover:bg-yellow-100 text-black font-bold py-2 px-4 rounded-full m-10 active:translate-y-2"
+            onclick="showsdomain()"
+            id="domainbutton"
+          >
             Show more
-            </button>
-            </div>
+          </button>
         </div>
+      </div>
     </section>
 
-</body>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+      axios.defaults.baseURL = 'http://localhost:8001/v1';
+    </script>
+    <script src="./script/axios.service.js"></script>
+    <script src="./script/socialmedia.service.js"></script>
+
+    <script src="./script/index.js"></script>
+  </body>
 </html>
